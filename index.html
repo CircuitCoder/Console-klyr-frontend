@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KLYR</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/img/icons/favicon-32px.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/img/icons/favicon-16px.png">
+    <!-- Add to home screen for Android and modern mobile browsers -->
+    <link rel="manifest" href="/static/manifest.json">
+    <meta name="theme-color" content="#FFFFFF">
+
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="console-klyr-frontend">
+    <link rel="apple-touch-icon" href="/static/img/icons/icon-152px.png">
+    <!-- Add to home screen for Windows -->
+    <meta name="msapplication-TileImage" content="/static/img/icons/icon-144px.png">
+    <meta name="msapplication-TileColor" content="#000000">
+
+    <link href="//cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/codemirror/5.28.0/codemirror.min.css" rel="stylesheet">
+    <link href="//bowercdn.net/c/mirrormark-1.0.1/dist/css/mirrormark.min.css" rel="stylesheet">
+
+    <script src="//cdn.bootcss.com/codemirror/5.28.0/codemirror.min.js"></script>
+    <script src="//cdn.bootcss.com/codemirror/5.28.0/addon/edit/continuelist.min.js"></script>
+    <script src="//cdn.bootcss.com/codemirror/5.28.0/addon/display/placeholder.min.js"></script>
+    <script src="//cdn.bootcss.com/codemirror/5.28.0/addon/display/autorefresh.min.js"></script>
+    <script src="//cdn.bootcss.com/codemirror/5.28.0/mode/markdown/markdown.min.js"></script>
+    <script src="//cdn.bootcss.com/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="//bowercdn.net/c/mirrormark-1.0.1/dist/js/mirrormark.min.js"></script>
+
+    <% for (var chunk of webpack.chunks) {
+        for (var file of chunk.files) {
+          if (file.match(/\.(js|css)$/)) { %>
+    <link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>"><% }}} %>
+  </head>
+  <body>
+    <noscript>
+      请使用最新版本的 Chrome 或 Firefox。Safari？真遗憾，我用不起苹果，没办法调试，不如你送我一台？
+    </noscript>
+    <div id="app"></div>
+    <!-- Todo: only include in production -->
+    <%= htmlWebpackPlugin.options.serviceWorkerLoader %>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

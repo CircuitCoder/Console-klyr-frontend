@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>favicon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="favicon">
+            <g id="Ring" transform="translate(-29.000000, -19.000000)">
+                <g>
+                    <ellipse id="Yellow" stroke="#FFE460" stroke-width="60" style="mix-blend-mode: lighten;" transform="translate(293.000000, 274.000000) rotate(162.000000) translate(-293.000000, -274.000000) " cx="293" cy="274" rx="176" ry="163"></ellipse>
+                    <ellipse id="Green" stroke="#60FF64" stroke-width="60" style="mix-blend-mode: lighten;" transform="translate(278.000000, 277.000000) rotate(57.000000) translate(-278.000000, -277.000000) " cx="278" cy="277" rx="160" ry="178"></ellipse>
+                    <ellipse id="Blue" stroke="#6075FF" stroke-width="60" style="mix-blend-mode: lighten;" transform="translate(288.500000, 273.000000) rotate(63.000000) translate(-288.500000, -273.000000) " cx="288.5" cy="273" rx="178.5" ry="161"></ellipse>
+                    <ellipse id="Red" stroke="#FF6060" stroke-width="60" style="mix-blend-mode: lighten;" transform="translate(291.493285, 282.000000) rotate(30.000000) translate(-291.493285, -282.000000) " cx="291.493285" cy="282" rx="183.5" ry="156"></ellipse>
+                </g>
+            </g>
+            <rect id="Rectangle" fill="#000000" style="mix-blend-mode: hue;" x="0" y="0" width="512" height="512"></rect>
+            <rect id="Rectangle" fill-opacity="0.399999976" fill="#FFFFFF" x="0" y="0" width="512" height="512"></rect>
+        </g>
+    </g>
+</svg>
